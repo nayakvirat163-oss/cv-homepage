@@ -1,21 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chinmaya Vidyalaya</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="chinmaya-logo.png">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/chogo.png" />
+  </head>
 
-<body>
+  <body>
+    <header class="nav-bar">
+      <div class="nav-bar-div">
+        <nav class="nav">
+          <div class="hego">
+            <h1 id="logo-container">
+              <a href="index.html"
+                ><i class="fa-solid fa-school" id="logo"></i></a
+              ><span id="logo-text">Chinmaya Vidyalaya</span>
+            </h1>
+          </div>
+          <div class="nav-links">
+            <a href="index.html" id="home" class="butt a">Home</a>
+            <a href="about.html" target="_blank" class="butt a">About</a>
+            <a href="about.html" target="_blank" class="butt a">Admissions</a>
+            <a
+              href="https://mail.google.com/mail/u/0/?fs=1&to=codeyaipro@gmail.com&tf=cm"
+              target="_blank"
+              class="btn-primary"
+              >Contact</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div>
+                <h1 style="font-size: 3rem; color: white;margin-left: 180px">Welcome to</h1>
+                <h1 style="font-size: 3rem; color: white;margin-left: 180px;text-decoration: underline rgb(163, 156, 167)">Chinmaya Vidyalaya</h1>
+                <p style="font-size: 1.5rem; color: white;margin-left: 180px">Where Learning Meets Inspiration</p>
+                <pre style="font-size: 1.5rem; color: white;margin-left: 180px">
+"Education is the passport to the future,
+ tomorrow belongs to those who prepare for it today."
+                </pre>
+            </div>
+            <div>
+                <button class="btn-primary" style="font-size: 1.5rem; color: white;margin-left: 180px">Enroll Now</button>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&to=codeyaipro@gmail.com&tf=cm" target="_blank"><button class="btn-secondary" style="font-size: 1.5rem; color: white;margin-left: 40px">Contact Us</button></a>
+            </div>
+        </div>
+        <section class="about">
+            <div>
+                <h2 style="font-size: 2.5rem; color: white;margin-left: 120px;margin-top: 40px">Why Choose Chinmaya?</h2>
+                <p style="font-size: 1.5rem; color: white;margin-left: 180px">
+                    Chinmaya Vidyalaya is a premier educational institution dedicated to providing quality education to students of all ages. Our mission is to empower individuals with the knowledge, skills, and values necessary for success in their chosen fields.
+                    <div class="graduate">
+                        <h3 style="font-size: 2rem; color: white;margin-left: 180px;margin-top: 15px;"><i class="fa-solid fa-user-graduate" style="height: 3.4rem;border: 2px solid rgb(159, 81, 201);width:3.4rem;padding: 10px;border-radius: 50%;background: linear-gradient(135deg, #1a1a1a, #4C1D95);color: #c8aeee"></i>
+                            <span>Assignments: </span>Daily assignments to keep you on track.
+                        </h3>
+                        <h3 style="font-size: 2rem; color: white;margin-left: 180px;margin-top: 15px"><i class="fa-solid fa-globe" style="height: 3.4rem;border: 2px solid rgb(159, 81, 201);width:3.4rem;padding: 10px;border-radius: 50%;background: linear-gradient(135deg, #1a1a1a, #4C1D95);color: #c8aeee""></i>
+                            <span>Attendance: </span>Track your attendance and performance.
+                        </h3>
+                        <h3 style="font-size: 2rem; color: white;margin-left: 180px;margin-top: 15px;"><i class="fa-solid fa-indian-rupee-sign" style="height: 3.4rem;border: 2px solid rgb(159, 81, 201);width:3.4rem;padding: 13px;border-radius: 50%;background: linear-gradient(135deg, #1a1a1a, #4C1D95);color: #c8aeee""></i>
+                            <span>Fee Payment: </span>Offline and Online payment options.
+                        </h3>
+                    </div>
+                </p>
+            </div>
+            <!-- <div class="events">
+                <h2 style="font-size: 2.5rem; color: white;margin-left: 120px;margin-top: 40px">Events</h2>
+                <div class="event-bar">
+                        <div class="event">
+                            <h3 style="font-size: 2rem; color: white;margin-left: 180px;margin-top: 15px"><i class="fa-solid fa-calendar-days" style="height: 3.4rem;border: 2px solid rgb(159, 81, 201);width:3.4rem;padding: 10px;border-radius: 50%;background: linear-gradient(135deg, #1a1a1a, #4C1D95);color: #c8aeee"></i>
+                                <span>Event Name: </span>Annual Day
+                                <span>| Date: </span>05th April 2026
+                            </h3>
+                            <h3 style="font-size: 2rem; color: white;margin-left: 180px;margin-top: 15px"><i class="fa-solid fa-calendar-days" style="height: 3.4rem;border: 2px solid rgb(159, 81, 201);width:3.4rem;padding: 10px;border-radius: 50%;background: linear-gradient(135deg, #1a1a1a, #4C1D95);color: #c8aeee"></i>
+                                <span>Event Name: </span>Sports Day
+                                <span>| Date: </span>14th May 2026
+                            </h3>
+                            <h3 style="font-size: 2rem; color: white;margin-left: 180px;margin-top: 15px"><i class="fa-solid fa-calendar-days" style="height: 3.4rem;border: 2px solid rgb(159, 81, 201);width:3.4rem;padding: 10px;border-radius: 50%;background: linear-gradient(135deg, #1a1a1a, #4C1D95);color: #c8aeee"></i>
+                                <span>Event Name: </span>Saraswati Day
+                                <span>| Date: </span>22th January 2026
+                            </h3>
+                            <h3 style="font-size: 2rem; color: white;margin-left: 180px;margin-top: 15px"><i class="fa-solid fa-calendar-days" style="height: 3.4rem;border: 2px solid rgb(159, 81, 201);width:3.4rem;padding: 10px;border-radius: 50%;background: linear-gradient(135deg, #1a1a1a, #4C1D95);color: #c8aeee"></i>
+                                <span>Event Name: </span>Virat BD!!
+                                <span>| Date: </span>04th July 2026
+                            </h3>
+                        </div>
+                </div>
+            </div> -->
+        </section>
+        <section class="reviews-section">
+        <h2 style="font-size: 2.5rem; color: white;margin-left: 120px;margin-top: 40px">Upcoming Events</h2>
+        <div class="reviews-slider">
+          <div class="reviews-track">
+            <div class="review-card">
+              <h3 style="font-size: 1.5rem; color: white;margin-top: 15px"><i class="fa-solid fa-calendar-days" style="height: 3.4rem;border: 2px solid rgb(159, 81, 201);width:3.4rem;padding: 10px;border-radius: 50%;background: linear-gradient(135deg, #1a1a1a, #4C1D95);color: #c8aeee"></i>
+                                <span>Event Name: </span>Annual Day
+                                <span>| Date: </span>05th April 2026
+                            </h3>
+            </div>
+            <div class="review-card">
+              <h3 style="font-size: 1.5rem; color: white;margin-top: 15px"><i class="fa-solid fa-calendar-days" style="height: 3.4rem;border: 2px solid rgb(159, 81, 201);width:3.4rem;padding: 10px;border-radius: 50%;background: linear-gradient(135deg, #1a1a1a, #4C1D95);color: #c8aeee"></i>
+                                <span>Event Name: </span>Sports Day
+                                <span>| Date: </span>14th May 2026
+                            </h3>
+            </div>
+            <div class="review-card">
+              <h3 style="font-size: 1.5rem; color: white;margin-top: 15px"><i class="fa-solid fa-calendar-days" style="height: 3.4rem;border: 2px solid rgb(159, 81, 201);width:3.4rem;padding: 10px;border-radius: 50%;background: linear-gradient(135deg, #1a1a1a, #4C1D95);color: #c8aeee"></i>
+                                <span>Event Name: </span>Saraswati Day
+                                <span>| Date: </span>22th January 2026
+                            </h3>
+            </div>
+            <div class="review-card">
+              <h3 style="font-size: 1.5rem; color: white;margin-top: 15px"><i class="fa-solid fa-calendar-days" style="height: 3.4rem;border: 2px solid rgb(159, 81, 201);width:3.4rem;padding: 10px;border-radius: 50%;background: linear-gradient(135deg, #1a1a1a, #4C1D95);color: #c8aeee"></i>
+                                <span>Event Name: </span>Virat BD!!
+                                <span>| Date: </span>04th July 2026
+                            </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews-section">
+        <h2 style="font-size: 2.5rem; color: white;margin-left: 120px;margin-top: 40px">Glimpse of Events</h2>
+        <div class="reviews-slider">
+          <div class="reviews-track">
+            <div class="review-card">
+              <h3 style="font-size: 1.5rem; color: white;margin-top: 15px"><i class="fa-solid fa-calendar-days" style="height: 3.4rem;border: 2px solid rgb(159, 81, 201);width:3.4rem;padding: 10px;border-radius: 50%;background: linear-gradient(135deg, #1a1a1a, #4C1D95);color: #c8aeee"></i>
+                
+                <img src="chogo.png" style="height: 100px;margin-left: 10px">
+                                <span>Event Name: </span>Annual Day
+                                <span>| Date: </span>05th April 2026
+                            </h3>
+            </div>
+            <div class="review-card">
+              <h3 style="font-size: 1.5rem; color: white;margin-top: 15px"><i class="fa-solid fa-calendar-days" style="height: 3.4rem;border: 2px solid rgb(159, 81, 201);width:3.4rem;padding: 10px;border-radius: 50%;background: linear-gradient(135deg, #1a1a1a, #4C1D95);color: #c8aeee"></i>
+                                <span>Event Name: </span>Sports Day
+                                <span>| Date: </span>14th May 2026
+                            </h3>
+            </div>
+            <div class="review-card">
+              <h3 style="font-size: 1.5rem; color: white;margin-top: 15px"><i class="fa-solid fa-calendar-days" style="height: 3.4rem;border: 2px solid rgb(159, 81, 201);width:3.4rem;padding: 10px;border-radius: 50%;background: linear-gradient(135deg, #1a1a1a, #4C1D95);color: #c8aeee"></i>
+                                <span>Event Name: </span>Saraswati Day
+                                <span>| Date: </span>22th January 2026
+                            </h3>
+            </div>
+            <div class="review-card">
+              <h3 style="font-size: 1.5rem; color: white;margin-top: 15px"><i class="fa-solid fa-calendar-days" style="height: 3.4rem;border: 2px solid rgb(159, 81, 201);width:3.4rem;padding: 10px;border-radius: 50%;background: linear-gradient(135deg, #1a1a1a, #4C1D95);color: #c8aeee"></i>
+                                <span>Event Name: </span>Virat BD!!
+                                <span>| Date: </span>04th July 2026
+                            </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <hr />
+      <div class="footer">
+        <span class="para">Made it love and efforts by Vortex</span>
+        <span class="span">Copyright © 2026 Axiom. All rights reserved.</span>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
