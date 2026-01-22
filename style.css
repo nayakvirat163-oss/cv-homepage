@@ -4,63 +4,367 @@
    ================================================================ */
 
 /* BASE RESET & SETUP */
+:root {
+  --purple-50: #faf5ff;
+  --purple-100: #e9d8fd;
+  --purple-200: #d6bcfa;
+  --purple-300: #b794f4;
+  --purple-400: #9f70f4;
+  --purple-500: #805adb;
+  --purple-600: #6b46c1;
+  --purple-700: #553c9a;
+  --purple-800: #44337a;
+  --purple-900: #322659;
+  --gray-50: #fafafa;
+  --gray-100: #f5f5f5;
+  --gray-200: #e5e5e5;
+  --gray-300: #d4d4d4;
+  --gray-400: #a3a3a3;
+  --gray-500: #737373;
+  --gray-600: #525252;
+  --gray-700: #404040;
+  --gray-800: #262626;
+  --gray-900: #171717;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 html,
 body {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  /* overflow: hidden; */
 }
 
 /* CSS VARIABLES */
 :root {
-    /* --primary: #667eea; */
-    --primary: #28378a;
-    /* --secondary: #764ba2; */
-    --secondary: #38f9d7;
-    --tertiary: #a629b4;
-    --success: #10b981;
-    --danger: #ef4444;
-    --warning: #f59e0b;
-    --info: #3b82f6;
-    --text-dark: #1f2937;
-    --text-light: #6b7280;
-    --bg-light: #f9fafb;
-    --border: #e5e7eb;
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    --transition-base: all 0.3s ease;
-    --transition-slow: all 0.5s ease;
-    --transition-fast: all 0.15s ease;
+  /* --primary: #667eea; */
+  --primary: #28378a;
+  /* --secondary: #764ba2; */
+  --secondary: #38f9d7;
+  --tertiary: #a629b4;
+  --success: #10b981;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+  --info: #3b82f6;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --bg-light: #f9fafb;
+  --border: #e5e7eb;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --transition-base: all 0.3s ease;
+  --transition-slow: all 0.5s ease;
+  --transition-fast: all 0.15s ease;
 }
 
 /* BODY & BASE STYLES */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: var(--bg-light);
-    color: var(--text-dark);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins", sans-serif;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #212429;
 }
 
 /* UTILITY CLASSES */
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 .visible {
-    display: block !important;
+  display: block !important;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  color: white;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #805adb, #4c1d95);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 10px 30px rgba(128, 90, 219, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(223, 222, 226, 0.4);
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links .a:hover {
+  color: var(--purple-600);
+}
+
+.logo-img {
+  height: 100px;
+}
+
+.nav-bar {
+  background-color: #1a1d23;
+  display: inline;
+  padding: 0px;
+  color: white;
+}
+
+.nav-links {
+  display: inline;
+}
+
+.para {
+  font-size: 17px;
+  margin-left: 0px;
+}
+
+.span {
+  margin-left: 570px;
+}
+
+.butt {
+  margin: 0px 10px 0px 10px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(41, 39, 39);
+}
+
+#heading {
+  height: 100px;
+  margin: 0px 0px 0px 0px;
+  font-size: 50px;
+  padding: 0px 0px 10px 0px;
+}
+
+.logo-img {
+  height: 100px;
+  display: inline;
+}
+
+#logo {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.hego {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero {
+  margin: 120px 0px 0px 0px;
+  background-color: #d7dde9;
+  height: 500px;
+  width: 1280px;
+  background-image: url("assets/div-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+  background-color: #ffffff;
+  mask-image: linear-gradient(to right,
+        transparent 3%,    /* Start transparent on the left */
+        black 20%,         /* Fade in to fully opaque by 20% */
+        black 80%,         /* Stay fully opaque until 80% */
+        transparent 97%   /* Fade out to transparent on the right */
+    );
+    /* For broader compatibility with older browsers, consider adding -webkit- prefix */
+    -webkit-mask-image: linear-gradient(to right,
+        transparent 3%,
+        black 20%,
+        black 80%,
+        transparent 97%
+    )
+  /* display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; */
+}
+
+.btn-secondary {
+    background: rgb(18, 17, 17);
+    color: var(--purple-700);
+    border: 2px solid var(--purple-300);
+    padding: 0.7rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    /* background: var(--purple-50); */
+    border-color: var(--purple-500);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(128, 90, 219, 0.4);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+.reviews-section {
+    /* background-color: var(--purple-50); */
+    padding: 60px 20px;
+    text-align: center;
+    overflow: hidden;
+    margin: 60px 0;
+}
+
+.reviews-section h2 {
+    margin-bottom: 40px;
+    color: var(--purple-700);
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.reviews-section h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: var(--purple-500);
+    display: block;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.reviews-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+.reviews-track {
+    display: flex;
+    animation: slide 35s linear infinite;
+    gap: 40px;
+}
+
+.review-card {
+    background: rgb(126, 122, 122);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(128, 90, 219, 0.15); /* Soft purple shadow */
+    min-width: 320px;
+    flex-shrink: 0;
+    text-align: left;
+    border: 1px solid var(--purple-100);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(128, 90, 219, 0.25);
+}
+
+.review-card p {
+    margin: 0 0 20px 0;
+    color: var(--gray-700);
+    font-size: 17px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.review-card strong {
+    display: block;
+    text-align: right;
+    color: var(--purple-600);
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Optional: Add a subtle quote icon */
+.review-card::before {
+    content: '“';
+    font-size: 80px;
+    color: var(--purple-200);
+    position: absolute;
+    left: 20px;
+    top: -10px;
+    line-height: 1;
+    font-family: Georgia, serif;
+    opacity: 0.7;
+}
+
+/* Sliding animation */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
